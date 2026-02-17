@@ -80,11 +80,26 @@
 
     /* Sticky header */
     header{
-      position:sticky; top:0; z-index:10;
-      background:rgba(11,12,16,.75);
-      backdrop-filter: blur(12px);
-      border-bottom:1px solid var(--line);
-    }
+  position:sticky;
+  top:0;
+  z-index:50;
+
+  background: linear-gradient(
+    180deg,
+    rgba(10,10,14,.95) 0%,
+    rgba(10,10,14,.85) 100%
+  );
+
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(244,194,13,.25);
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.6),
+    0 0 25px rgba(244,194,13,.15);
+
+  padding:6px 0;
+}
     nav{
       display:flex; align-items:center; justify-content:space-between;
       gap:12px; padding:12px 0;
