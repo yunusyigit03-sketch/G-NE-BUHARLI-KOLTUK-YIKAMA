@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f4c20d" />
+
+  <!-- SEO Title -->
+  <title>Afyonkarahisar Merkez Koltuk Yıkama | Güneş Buharlı Koltuk Yıkama (Yerinde Hizmet)</title>
+
+  <!-- SEO Description -->
+  <meta name="description" content="Afyonkarahisar Merkez’de buharlı koltuk yıkama, yatak yıkama ve araç koltuğu temizliği. Yerinde hizmet, hızlı kuruma, hijyenik temizlik. Hemen WhatsApp: 0540 003 03 22" />
+
+  <!-- Canonical (yayına alınca kendi domaininle değiştir) -->
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Güneş Buharlı Koltuk Yıkama | Afyonkarahisar Merkez" />
+  <meta property="og:description" content="Buharlı koltuk yıkama • Yerinde hizmet • Hızlı kuruma • Hijyenik temizlik" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+  <!-- Preconnect (performans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Optional: Google Font (istersen kaldır, hız için) -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- LocalBusiness Schema (SEO için kritik) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Güneş Buharlı Koltuk Yıkama",
+    "areaServed":"Afyonkarahisar Merkez",
+    "telephone":"+90 540 003 03 22",
+    "url":"https://example.com/",
+    "description":"Afyonkarahisar Merkez’de yerinde buharlı koltuk yıkama, yatak yıkama ve araç koltuğu temizliği.",
+    "serviceType":[
+      "Buharlı koltuk yıkama",
+      "Yatak yıkama",
+      "Araç koltuğu temizliği",
+      "Sandalye/ofis koltuğu temizliği"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --accent:#f4c20d;
+      --bg:#0b0c10;
+      --card:#101218;
+      --text:#f6f7fb;
+      --muted:#b8bcc9;
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 12px 40px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Manrope, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 15% 10%, rgba(244,194,13,.18), transparent 60%),
+                  radial-gradient(900px 500px at 85% 0%, rgba(120,180,255,.10), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    /* Accessiblity */
+    :focus-visible{outline:3px solid rgba(244,194,13,.65); outline-offset:3px; border-radius:10px;}
+
+    .wrap{max-width:1120px; margin:0 auto; padding:0 18px;}
+
+    /* Sticky header */
+    header{
+      position:sticky; top:0; z-index:10;
+      background:rgba(11,12,16,.75);
+      backdrop-filter: blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:12px 0;
+    }
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.2px;}
+    .sun{
+      width:38px; height:38px; border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #fff 0 18%, var(--accent) 26% 100%);
+      box-shadow: 0 0 0 8px rgba(244,194,13,.12), 0 10px 35px rgba(244,194,13,.18);
+      animation: pulse 3.6s ease-in-out infinite;
+    }
+    @keyframes pulse{
+      0%,100%{transform:scale(1)}
+      50%{transform:scale(1.05)}
+    }
+
+    .links{display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end;}
+    .links a{
+      text-decoration:none; color:var(--text);
+      padding:8px 10px; border-radius:12px; font-weight:600; font-size:14px;
+      border:1px solid transparent;
+    }
+    .links a:hover{border-color:var(--line); background:rgba(255,255,255,.04)}
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      border:0; border-radius:14px; padding:12px 16px;
+      font-weight:800; text-decoration:none; cursor:pointer;
+      transition: transform .15s ease, filter .15s ease, background .15s ease;
+      will-change: transform;
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .btn:active{transform: translateY(0px) scale(.99)}
+    .btn.primary{background:var(--accent); color:#111}
+    .btn.primary:hover{filter:brightness(.95)}
+    .btn.ghost{background:rgba(255,255,255,.06); color:var(--text); border:1px solid var(--line)}
+    .btn.ghost:hover{background:rgba(255,255,255,.08)}
+
+    /* Hero */
+    .hero{padding:46px 0 18px}
+    .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:16px; align-items:stretch}
+    .kicker{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:7px 12px; border-radius:999px;
+      background:rgba(244,194,13,.12);
+      border:1px solid rgba(244,194,13,.25);
+      color:#fff; font-weight:700; font-size:13px;
+    }
+    h1{
+      margin:12px 0 10px;
+      font-size:42px; line-height:1.12;
+      letter-spacing:-.6px;
+    }
+    .sub{margin:0 0 16px; color:var(--muted); font-size:16px}
+    .badges{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 0}
+    .badge{
+      font-size:12px; font-weight:700;
+      padding:6px 10px; border-radius:999px;
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--line);
+      color:var(--text);
+    }
+
+    .hero-card{
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+      transform: translateY(6px);
+      opacity:0;
+      animation: rise .7s ease forwards;
+    }
+    .hero-card.delay{animation-delay:.12s}
+    @keyframes rise{
+      to{transform:translateY(0); opacity:1}
+    }
+
+    .stat-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:12px}
+    .stat{
+      background:rgba(0,0,0,.18);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:12px;
+    }
+    .stat b{display:block; font-size:14px}
+    .stat span{color:var(--muted); font-size:13px}
+
+    /* Sections */
+    section{padding:24px 0}
+    .section-title{display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px}
+    h2{margin:0; font-size:26px; letter-spacing:-.2px}
+    .hint{margin:0; color:var(--muted); font-size:14px}
+
+    .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+    .card{
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+      transform: translateY(6px);
+      opacity:0;
+    }
+
+    /* Scroll reveal */
+    .reveal.show{transform:translateY(0); opacity:1; transition: all .55s ease}
+    .card b{display:block; margin-bottom:6px; font-size:16px}
+    .card p{margin:0; color:var(--muted); font-size:14px}
+
+    .price{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    .row{
+      display:flex; justify-content:space-between; gap:10px;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .row span{color:var(--muted)}
+    .row b{color:var(--text)}
+
+    .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
+    .ph{
+      aspect-ratio: 4 / 3;
+      border-radius: 16px;
+      border:1px dashed rgba(255,255,255,.22);
+      background: linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      display:flex; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.65); font-weight:800;
+    }
+
+    footer{
+      border-top:1px solid var(--line);
+      padding:18px 0;
+      color:rgba(255,255,255,.70);
+      font-size:14px;
+    }
+
+    /* Sticky mobile CTA */
+    .mobile-cta{
+      position:fixed; left:12px; right:12px; bottom:12px;
+      display:none; gap:10px;
+      z-index:20;
+    }
+    .mobile-cta a{flex:1}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr}
+      h1{font-size:36px}
+      .grid3{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .price{grid-template-columns:1fr}
+      .mobile-cta{display:flex}
+      .links{display:none}
+    }
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none !important; transition:none !important; scroll-behavior:auto !important}
+      .sun{animation:none !important}
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Üst menü">
+      <div class="brand">
+        <span class="sun" aria-hidden="true"></span>
+        <span>Güneş Buharlı Koltuk Yıkama</span>
+      </div>
+      <div class="links">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#neden">Neden Biz?</a>
+        <a href="#fiyat">Fiyatlar</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+      <a class="btn primary" href="https://wa.me/905400030322?text=Merhaba%20G%C3%BCne%C5%9F%20Buharl%C4%B1%20Koltuk%20Y%C4%B1kama%20Afyonkarahisar%20Merkez,%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <span class="kicker">Afyonkarahisar Merkez • Yerinde Hizmet • Hızlı Kuruma</span>
+          <h1>Afyonkarahisar Merkez’de Buharlı Koltuk Yıkama</h1>
+          <p class="sub">
+            Koltuk, yatak ve araç koltuğu temizliğinde <b>buharlı derin temizlik</b> ile hijyenik sonuç.
+            Leke & koku giderme, hızlı kuruma ve uygun fiyat.
+          </p>
+
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">
+            <a class="btn primary" href="https://wa.me/905400030322?text=Merhaba%20G%C3%BCne%C5%9F%20Buharl%C4%B1%20Koltuk%20Y%C4%B1kama%20Afyonkarahisar%20Merkez,%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+              WhatsApp’tan Randevu Al
+            </a>
+            <a class="btn ghost" href="tel:+905400030322">Hemen Ara: 0540 003 03 22</a>
+          </div>
+
+          <div class="badges" aria-label="Öne çıkanlar">
+            <span class="badge">Buharlı derin temizlik</span>
+            <span class="badge">Leke & koku giderme</span>
+            <span class="badge">Aynı gün randevu</span>
+            <span class="badge">Uygun fiyat</span>
+          </div>
+        </div>
+
+        <div class="hero-card delay">
+          <div class="section-title" style="margin-bottom:10px">
+            <h2 style="font-size:20px;margin:0">Hızlı Bilgi</h2>
+            <p class="hint">Afyonkarahisar Merkez</p>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat">
+              <b>🧼 Hijyenik Temizlik</b>
+              <span>Buhar gücüyle derin temizlik</span>
+            </div>
+            <div class="stat">
+              <b>⏱️ Hızlı Kuruma</b>
+              <span>Kullanıma daha hızlı dönüş</span>
+            </div>
+            <div class="stat">
+              <b>🏠 Yerinde Hizmet</b>
+              <span>Ev/iş yerinde pratik işlem</span>
+            </div>
+            <div class="stat">
+              <b>📞 Kolay İletişim</b>
+              <span>WhatsApp & telefon</span>
+            </div>
+          </div>
+
+          <div style="margin-top:12px" class="card" style="padding:14px">
+            <b>Hizmet Saatleri</b>
+            <p>Randevu ile çalışıyoruz. Mesaj bırakın, hızlı dönüş yapalım.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="hizmetler">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Hizmetlerimiz</h2>
+        <p class="hint">Koltuk • Yatak • Araç koltuğu • Sandalye</p>
+      </div>
+
+      <div class="grid3">
+        <article class="card reveal">
+          <b>🛋️ Buharlı Koltuk Yıkama</b>
+          <p>Toz, kir ve bakterileri buharla derinlemesine temizler; zorlu lekelerde özel uygulama yapılır.</p>
+        </article>
+        <article class="card reveal">
+          <b>🛏️ Yatak Yıkama</b>
+          <p>Yataklarda biriken akar ve bakterilere karşı hijyen odaklı temizlik.</p>
+        </article>
+        <article class="card reveal">
+          <b>🚗 Araç Koltuğu Temizliği</b>
+          <p>Kumaş/deri yüzeylere uygun işlem ile ferah ve temiz görünüm.</p>
+        </article>
+        <article class="card reveal">
+          <b>🪑 Sandalye & Ofis Koltuğu</b>
+          <p>Ev ve iş yerleri için toplu temizlik ve düzenli bakım seçeneği.</p>
+        </article>
+        <article class="card reveal">
+          <b>🧼 Leke & Koku Giderme</b>
+          <p>Zorlu lekeler için buhar destekli özel işlem; kötü kokuların azaltılmasına yardımcı olur.</p>
+        </article>
+        <article class="card reveal">
+          <b>🏠 Yerinde Hizmet</b>
+          <p>Afyonkarahisar Merkez’de randevu ile adresinize geliyoruz.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="neden">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Neden Güneş?</h2>
+        <p class="hint">Memnuniyet odaklı, hızlı ve temiz</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card reveal">
+          <b>✅ Profesyonel Ekipman</b>
+          <p>Buharlı sistem ile derin temizlik ve hijyen.</p>
+        </div>
+        <div class="card reveal">
+          <b>✅ Hızlı Kuruma</b>
+          <p>Günlük yaşamı minimum etkileyen süreç.</p>
+        </div>
+        <div class="card reveal">
+          <b>✅ Şeffaf Fiyat</b>
+          <p>İşleme başlamadan önce bilgilendirme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fiyat">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Fiyatlar</h2>
+        <p class="hint">Şablon – fiyatları sen doldurabilirsin</p>
+      </div>
+
+      <div class="price">
+        <div class="row"><span>3’lü Koltuk</span><b>___ TL</b></div>
+        <div class="row"><span>2’li Koltuk</span><b>___ TL</b></div>
+        <div class="row"><span>Köşe Takımı</span><b>___ TL</b></div>
+        <div class="row"><span>Tek Kişilik Yatak</span><b>___ TL</b></div>
+        <div class="row"><span>Çift Kişilik Yatak</span><b>___ TL</b></div>
+        <div class="row"><span>Araç Koltuğu</span><b>___ TL</b></div>
+      </div>
+
+      <p class="hint" style="margin-top:10px">
+        Not: Fiyatlar kumaş tipi, kirlilik durumu ve adetlere göre değişebilir. Net fiyat için WhatsApp’tan yazın.
+      </p>
+
+      <div style="margin-top:12px">
+        <a class="btn primary" href="https://wa.me/905400030322?text=Merhaba%20G%C3%BCne%C5%9F%20Buharl%C4%B1%20Koltuk%20Y%C4%B1kama%20Afyonkarahisar%20Merkez,%20fiyat%20bilgisi%20alabilir%20miyim%3F" target="_blank" rel="noopener">
+          Fiyat Sor (WhatsApp)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Galeri</h2>
+        <p class="hint">Öncesi / Sonrası fotoğraflarını buraya ekle</p>
+      </div>
+
+      <div class="gallery">
+        <div class="ph reveal">Fotoğraf 1</div>
+        <div class="ph reveal">Fotoğraf 2</div>
+        <div class="ph reveal">Fotoğraf 3</div>
+        <div class="ph reveal">Fotoğraf 4</div>
+        <div class="ph reveal">Fotoğraf 5</div>
+        <div class="ph reveal">Fotoğraf 6</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="iletisim">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>İletişim</h2>
+        <p class="hint">Afyonkarahisar Merkez</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card reveal">
+          <b>📞 Telefon</b>
+          <p><a href="tel:+905400030322" style="color:var(--text)">0540 003 03 22</a></p>
+        </div>
+        <div class="card reveal">
+          <b>💬 WhatsApp</b>
+          <p><a href="https://wa.me/905400030322?text=Merhaba%20G%C3%BCne%C5%9F%20Buharl%C4%B1%20Koltuk%20Y%C4%B1kama%20Afyonkarahisar%20Merkez,%20randevu%20almak%20istiyorum." target="_blank" rel="noopener" style="color:var(--text)">Mesaj Gönder</a></p>
+        </div>
+        <div class="card reveal">
+          <b>📍 Hizmet Bölgesi</b>
+          <p>Afyonkarahisar Merkez</p>
+        </div>
+      </div>
+
+      <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:10px">
+        <a class="btn primary" href="https://wa.me/905400030322?text=Merhaba%20G%C3%BCne%C5%9F%20Buharl%C4%B1%20Koltuk%20Y%C4%B1kama%20Afyonkarahisar%20Merkez,%20bug%C3%BCn%20uygun%20randevu%20var%20m%C4%B1%3F" target="_blank" rel="noopener">
+          Bugün Uygun mu?
+        </a>
+        <a class="btn ghost" href="#top">Yukarı Çık</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Mobile sticky CTA -->
+<div class="mobile-cta" aria-label="Hızlı iletişim">
+  <a class="btn primary" href="https://wa.me/905400030322?text=Merhaba%20G%C3%BCne%C5%9F%20Buharl%C4%B1%20Koltuk%20Y%C4%B1kama%20Afyonkarahisar%20Merkez,%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn ghost" href="tel:+905400030322">Ara</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    © <span id="y"></span> Güneş Buharlı Koltuk Yıkama — Afyonkarahisar Merkez
+  </div>
+</footer>
+
+<script>
+  // Yıl
+  document.getElementById("y").textContent = new Date().getFullYear();
+
+  // Scroll reveal animasyon
+  const els = document.querySelectorAll(".reveal");
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add("show");
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.12});
+  els.forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
