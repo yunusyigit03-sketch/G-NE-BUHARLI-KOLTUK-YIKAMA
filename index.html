@@ -348,7 +348,35 @@
    ...
 }
 
-</style>
+/* Ultra Çekici Sabit WhatsApp */
+.floating-whatsapp{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:linear-gradient(45deg,#25D366,#1ebe5d);
+  color:#fff;
+  padding:16px 28px;
+  border-radius:50px;
+  font-weight:800;
+  font-size:16px;
+  text-decoration:none;
+  box-shadow:0 0 20px rgba(37,211,102,.6);
+  z-index:9999;
+  animation:whatsappPulse 2s infinite;
+  transition:.3s ease;
+}
+
+.floating-whatsapp:hover{
+  transform:translateX(-50%) scale(1.08);
+  box-shadow:0 0 35px rgba(37,211,102,.9);
+}
+
+@keyframes whatsappPulse{
+  0%{box-shadow:0 0 15px rgba(37,211,102,.6);}
+  50%{box-shadow:0 0 40px rgba(37,211,102,1);}
+  100%{box-shadow:0 0 15px rgba(37,211,102,.6);}
+}
   </style>
 </head>
 
@@ -673,5 +701,16 @@
   }, {threshold: 0.12});
   els.forEach(el=>io.observe(el));
 </script>
+<!-- Sabit WhatsApp Buton -->
+<a href="https://wa.me/905400030322"
+   class="floating-whatsapp"
+   target="_blank">
+   💬 WhatsApp'tan Yaz
+</a>
+<a href="https://wa.me/905400030322"
+   class="floating-whatsapp"
+   target="_blank">
+   💬 WhatsApp'tan Yaz
+</a>
 </body>
 </html>
